@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
+
 
 // Define the MongoDB connection URL
-const mongoURL = 'mongodb://127.0.0.1:27017/GYM'; // Replace 'GYM' with your database name
-
+//const mongoURL = 'mongodb://127.0.0.1:27017/GYM'; // Replace 'GYM' with your database name
+const mongoURL = 'mongodb+srv://amul:AMUL8972@cluster0.efr5g.mongodb.net/';
 // Set up MongoDB connection
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
